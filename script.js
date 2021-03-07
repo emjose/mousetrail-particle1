@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particleArray = [];
-const numberOfParticles = 100;
+const numberOfParticles = 200;
 
 // Get Mouse Position
 const mouse = {
@@ -34,7 +34,7 @@ class Particle {
     }
     draw(){
         ctx.beginPath();
-        ctx.art(this.x, this.y, this,size, 0, Math.PI * 2, false);
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
         ctx.fillStyle = this.color;
         ctx.fill();
     }
@@ -43,7 +43,7 @@ class Particle {
         if (this.size < 0){
             this.x = (mouse.x + ((Math.random() * 20) - 10));
             this.y = (mouse.y + ((Math.random() * 20) - 10));
-            this.size = (Math.random() * 10) + 2;
+            this.size = (Math.random() * 10) + 12;
             this.weight = (Math.random() * 2) - 0.5;
         }
         this.y += this.weight;
@@ -61,7 +61,7 @@ function init(){
         let x = Math.random() * canvas.width;
         let y = Math.random() * canvas.height;
         let size = (Math.random() * 5) + 2;
-        let color = 'black';
+        let color = 'rgb(55, 11, 175)';
         let weight = 1;
         particleArray.push(new Particle(x, y, size, color, weight));
     }
