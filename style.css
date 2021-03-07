@@ -5,12 +5,9 @@
   width: 100%;
   height: 100%;
   z-index: -10;
-  /* background: linear-gradient(#25364f, #4d71a5, #9bc4ff); */
   background: black;
-  /* background: linear-gradient(#000000, #2f2f30, #696969); */
 
-  /* color: rgb(55, 11, 175);
-  color: rgb(40, 5, 136); */
+  /* cursor: pointer; */
 
-  cursor: pointer;
+  color: rgba(0, 0, 0, 0.01);
 }
