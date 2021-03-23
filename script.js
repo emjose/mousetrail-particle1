@@ -62,7 +62,7 @@ function init(){
         let x = Math.random() * canvas.width;
         let y = Math.random() * canvas.height;
         let size = (Math.random() * 5) + 2;
-        let color = 'rgb(235, 0, 51)';
+        let color = 'pink';
         let weight = 1;
         particleArray.push(new Particle(x, y, size, color, weight));
     }
