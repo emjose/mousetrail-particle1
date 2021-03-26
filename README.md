@@ -61,7 +61,7 @@ open index.html
 
 <a href="https://emjose.github.io/mousetrail-particle1/">![Live Site](Assets/inter-live-site.png)</a>  
 
-<a href="https://emjose.github.io/mousetrail-particle2/">![Under Construction](Assets/024-particle1.gif)</a>
+<a href="https://emjose.github.io/mousetrail-particle1/">![Live Site](Assets/024-particle1.gif)</a>
 
 #
 
