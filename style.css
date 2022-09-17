@@ -1,13 +1,61 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--github-fill: #fdbec9;
+	--github-color: var(--black);
+	--github-focus: var(--white);
+	--canvas-color: rgba(0, 0, 0, 0.01);
+}
+
 #canvas1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: var(--black);
+	cursor: pointer;
+	color: var(--canvas-color);
+}
 
-  cursor: pointer;
+.github-corner:focus svg path {
+	fill: var(--github-focus);
+}
 
-  color: rgba(0, 0, 0, 0.01);
+.github-corner:focus .octo-arm,
+.github-corner:focus .octo-body {
+	fill: var(--github-color);
+}
+
+.github-corner:hover .octo-arm,
+.github-corner:focus .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
 }
